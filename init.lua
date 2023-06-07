@@ -2,9 +2,7 @@ require("bridger.plugins-setup")
 require("bridger.core.options")
 require("bridger.core.keymaps")
 require("bridger.core.colorscheme")
-require("noirbuddy").setup({
-	preset = "miami-nights",
-})
+require("kanagawa").load("wave")
 require("bridger.plugins.comment")
 require("bridger.plugins.nvim-tree")
 require("bridger.plugins.lualine")

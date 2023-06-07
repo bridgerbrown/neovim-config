@@ -29,8 +29,8 @@ return packer.startup(function(use)
 	-- lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
 
-	-- nvim-noirbuddy
-	use({ "jesseleite/nvim-noirbuddy", requires = { "tjdevries/colorbuddy.nvim", branch = "dev" } })
+	-- Kanagawa color theme
+	use("rebelot/kanagawa.nvim")
 
 	use("christoomey/vim-tmux-navigator") -- tmux and split window navigation
 
