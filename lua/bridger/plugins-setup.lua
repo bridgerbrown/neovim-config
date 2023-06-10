@@ -32,9 +32,14 @@ return packer.startup(function(use)
 	-- Kanagawa color theme
 	use("rebelot/kanagawa.nvim")
 
-	use("christoomey/vim-tmux-navigator") -- tmux and split window navigation
+	-- tmux and split window navigation
+	use("christoomey/vim-tmux-navigator")
 
-	use("szw/vim-maximizer") -- maximizes and restores current window
+	-- bufferline tabs
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+
+	-- maximizes and restores current window
+	use("szw/vim-maximizer")
 
 	-- essential plugins
 	use("tpope/vim-surround")

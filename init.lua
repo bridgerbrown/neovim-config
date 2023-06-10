@@ -3,6 +3,18 @@ require("bridger.core.options")
 require("bridger.core.keymaps")
 require("bridger.core.colorscheme")
 require("kanagawa")
+vim.opt.termguicolors = true
+require("bufferline").setup({
+	options = {
+		tab_size = 22,
+		separator_style = "slant",
+		hover = {
+			enabled = true,
+			delay = 200,
+			reveal = { "close" },
+		},
+	},
+})
 require("bridger.plugins.comment")
 require("bridger.plugins.nvim-tree")
 require("bridger.plugins.lualine")
