@@ -6,12 +6,12 @@ require("kanagawa")
 vim.opt.termguicolors = true
 require("bufferline").setup({
 	options = {
-		tab_size = 16,
+		tab_size = 13,
 		separator_style = "slant",
 		hover = {
 			enabled = true,
 			delay = 200,
-			reveal = { "close" },
+			reveal = { 'close' },
 		},
 	},
 })
