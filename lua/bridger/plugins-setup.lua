@@ -32,7 +32,6 @@ return packer.startup(function(use)
 	-- Kanagawa color theme
   use("rebelot/kanagawa.nvim")
 
-
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 
