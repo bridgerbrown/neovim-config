@@ -105,6 +105,9 @@ return packer.startup(function(use)
 	-- emmet-ls
 	use("aca/emmet-ls")
 
+  -- GLSL syntax
+  use("tikhomirov/vim-glsl")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

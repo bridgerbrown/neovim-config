@@ -13,9 +13,13 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>+", "<C-a>")
 keymap.set("n", "<leader>-", "<C-x>")
 
+-- terminal
+keymap.set("n", "<leader>t", ":terminal<CR>")
 -- exiting terminal
 keymap.set("t", '<C-q>', '<C-\\><C-n>', { noremap = true})
 
+
+-- window splitting
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width

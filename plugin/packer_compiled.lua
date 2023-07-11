@@ -236,6 +236,11 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-glsl"] = {
+    loaded = true,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/vim-glsl",
+    url = "https://github.com/tikhomirov/vim-glsl"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/vim-maximizer",
