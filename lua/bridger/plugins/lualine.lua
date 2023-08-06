@@ -23,9 +23,9 @@ require("lualine").setup({
 		},
 	},
 	sections = {
-		lualine_a = { "mode" },
+		lualine_a = { { "mode", icons_enabled = true, padding = 2 } },
 		lualine_b = { "branch", "diff", "diagnostics" },
-		lualine_c = { "" },
+		lualine_c = { "filename" },
 		lualine_x = { "filetype" },
 		lualine_y = { "progress" },
 		lualine_z = { "location" },
