@@ -15,7 +15,7 @@ local colors = {
 }
 
 local function icon()
-  return [[]]
+  return [[󰥳]]
 end
 
 require("lualine").setup({
