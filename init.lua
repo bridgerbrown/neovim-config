@@ -2,7 +2,9 @@ require("bridger.plugins-setup")
 require("bridger.core.options")
 require("bridger.core.keymaps")
 require("bridger.core.colorscheme")
-require("kanagawa")
+require("kanagawa").setup({
+  terminalColors=true,
+})
 vim.opt.termguicolors = true
 require("bufferline").setup({
 	options = {
@@ -27,3 +29,4 @@ require("bridger.plugins.lsp.null-ls")
 require("bridger.plugins.autopairs")
 require("bridger.plugins.treesitter")
 require("bridger.plugins.gitsigns")
+require("harpoon")

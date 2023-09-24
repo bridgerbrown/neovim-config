@@ -49,9 +49,18 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap.set("n", "<leader>fh", "<cmd>Telescop  help_tags<cr>")
 
---bufferline.nvim
+-- bufferline.nvim
 keymap.set("n", "<leader>k", ":BufferLineCycleNext<CR>")
 keymap.set("n", "<leader>j", ":BufferLineCyclePrev<CR>")
 
---writing files shortcut
+-- writing files shortcut
 keymap.set("n", "<leader>w", ":w<CR>")
+
+-- harpoon
+keymap.set("n", "<leader>ht", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", { desc = "Toggle Harpoon Menu"})
+keymap.set("n", "<leader>ha", ":lua require('harpoon.mark').add_file()<CR>", { desc = "Add file to harpoon list" })
+  for pos = 0, 9 do
+    keymap.set("n", "<leader>h" .. pos, function()
+      require("harpoon.ui").nav_file(pos)
+    end, { desc = "Move to harpoon mark #" .. pos })
+  end
