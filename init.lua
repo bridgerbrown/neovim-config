@@ -6,17 +6,6 @@ require("kanagawa").setup({
   terminalColors=true,
 })
 vim.opt.termguicolors = true
-require("bufferline").setup({
-	options = {
-		tab_size = 13,
-		separator_style = "slant",
-		hover = {
-			enabled = true,
-			delay = 200,
-			reveal = { 'close' },
-		},
-	},
-})
 require("bridger.plugins.comment")
 require("bridger.plugins.nvim-tree")
 require("bridger.plugins.lualine")

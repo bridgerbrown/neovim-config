@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -113,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  darcula = {
+    loaded = true,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/darcula",
+    url = "https://github.com/doums/darcula"
   },
   ["emmet-ls"] = {
     loaded = true,
@@ -205,11 +205,6 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

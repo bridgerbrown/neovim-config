@@ -29,14 +29,17 @@ return packer.startup(function(use)
 	-- lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
 
-	-- Kanagawa color theme
+	-- Kanagawa color theme (for day)
   use("rebelot/kanagawa.nvim")
+
+  -- Darcula color theme (for night)
+  use("doums/darcula")
 
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 
 	-- bufferline tabs
-	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+	-- use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- maximizes and restores current window
 	use("szw/vim-maximizer")
