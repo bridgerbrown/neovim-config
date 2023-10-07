@@ -2,10 +2,7 @@ require("bridger.plugins-setup")
 require("bridger.core.options")
 require("bridger.core.keymaps")
 require("bridger.core.colorscheme")
-require("kanagawa").setup({
-  terminalColors=true,
-})
-vim.opt.termguicolors = true
+require("kanagawa").setup({})
 require("bridger.plugins.comment")
 require("bridger.plugins.nvim-tree")
 require("bridger.plugins.lualine")

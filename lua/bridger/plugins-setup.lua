@@ -29,17 +29,17 @@ return packer.startup(function(use)
 	-- lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
 
-	-- Kanagawa color theme (for day)
+	-- Kanagawa theme (for day)
   use("rebelot/kanagawa.nvim")
 
-  -- Darcula color theme (for night)
-  use("doums/darcula")
+  -- vim-fahrenheit theme (for night)
+  use("fcpg/vim-fahrenheit")
 
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 
-	-- bufferline tabs
-	-- use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
+  -- icons
+  use("nvim-tree/nvim-web-devicons")
 
 	-- maximizes and restores current window
 	use("szw/vim-maximizer")
@@ -53,9 +53,6 @@ return packer.startup(function(use)
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
-
-	-- icons
-	use("ryanoasis/vim-devicons")
 
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
@@ -84,7 +81,7 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({ "nvimdev/lspsaga.nvim", branch = "main" })
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 
