@@ -26,6 +26,15 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 
+  -- startup-nvim startup screen
+  use {
+    "startup-nvim/startup.nvim",
+    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    config = function()
+      require"startup".setup(require"bridger.plugins.startup-nvim")
+    end
+  }
+
 	-- lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
 

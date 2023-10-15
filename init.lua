@@ -1,6 +1,7 @@
 require("bridger.plugins-setup")
 require("bridger.core.options")
 require("bridger.core.keymaps")
+require("bridger.plugins.startup-nvim")
 require("bridger.core.colorscheme")
 require("kanagawa").setup({})
 require("bridger.plugins.comment")

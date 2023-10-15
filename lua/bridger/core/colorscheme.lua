@@ -5,15 +5,7 @@ local function isDarkMode()
     return darkModeStatus == "Dark\n"
 end
 
-local colorscheme = isDarkMode() and "fahrenheit" or "kanagawa-wave"
-
-if colorscheme == "spaceduck" then
-    if vim.fn.exists('+termguicolors') then
-        vim.o.t_8f = "\27[38;2;%lu;%lu;%lum"
-        vim.o.t_8b = "\27[48;2;%lu;%lu;%lum"
-        vim.opt.termguicolors = true
-    end
-end
+local colorscheme = isDarkMode() and "kanagawa-wave" or "kanagawa-wave"
 
 local status, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status then
