@@ -40,4 +40,4 @@ opt.iskeyword:append("-")
 opt.showmode = false
 
 -- remove empty line ~'s
- opt.fillchars = { eob = " "}
+opt.fillchars = { eob = " "}

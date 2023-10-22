@@ -211,6 +211,11 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["papercolor-theme"] = {
+    loaded = true,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -236,11 +241,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
-  },
-  ["vim-fahrenheit"] = {
-    loaded = true,
-    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/vim-fahrenheit",
-    url = "https://github.com/fcpg/vim-fahrenheit"
   },
   ["vim-glsl"] = {
     loaded = true,
