@@ -41,9 +41,6 @@ return packer.startup(function(use)
 	-- Kanagawa theme (for day)
   use("rebelot/kanagawa.nvim")
 
-  -- papercolor theme (for night)
-  use("NLKNguyen/papercolor-theme")
-
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 

@@ -5,7 +5,7 @@ local function isDarkMode()
     return darkModeStatus == "Dark\n"
 end
 
-local colorscheme = isDarkMode() and "Papercolor" or "kanagawa-wave"
+local colorscheme = isDarkMode() and "kanagawa-wave" or "kanagawa-wave"
 
 local status, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status then
