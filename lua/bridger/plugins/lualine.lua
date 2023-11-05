@@ -25,7 +25,7 @@ local function isDarkMode()
     return darkModeStatus == "Dark\n"
 end
 
-local colorscheme = isDarkMode() and "kanagawa-dragon" or "kanagawa-wave"
+local colorscheme = isDarkMode() and "alduin" or "kanagawa-wave"
 
 if colorscheme == "kanagawa-wave" then
   require("lualine").setup({

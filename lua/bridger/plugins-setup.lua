@@ -41,6 +41,9 @@ return packer.startup(function(use)
 	-- Kanagawa theme (for day)
   use("rebelot/kanagawa.nvim")
 
+  -- Alduin theme (for night)
+  use("alessandroyorba/alduin")
+
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 
@@ -70,6 +73,9 @@ return packer.startup(function(use)
   -- harpoon
   use("ThePrimeagen/harpoon")
 
+  -- leap.nvim for two char fast searching
+  use("ggandor/leap.nvim")
+
 	-- autocompletion
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
@@ -87,7 +93,13 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
-	use({ "nvimdev/lspsaga.nvim", branch = "main" })
+  use ({
+      'nvimdev/lspsaga.nvim',
+      after = 'nvim-lspconfig',
+      config = function()
+          require('lspsaga').setup({})
+      end,
+  })
 	use("jose-elias-alvarez/typescript.nvim")
 	use("onsails/lspkind.nvim")
 

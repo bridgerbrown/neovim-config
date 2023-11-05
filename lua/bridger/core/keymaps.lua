@@ -3,13 +3,9 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 
 -- general keymaps
-
 keymap.set("i", "jk", "<ESC>")
-
 keymap.set("n", "<leader>nh", ":nohl<CR>")
-
 keymap.set("n", "x", '"_x')
-
 keymap.set("n", "<leader>+", "<C-a>")
 keymap.set("n", "<leader>-", "<C-x>")
 
@@ -20,7 +16,6 @@ keymap.set("t", '<leader>q', '<C-\\><C-n>', { noremap = true})
 
 -- exit nvim
 keymap.set("n", "<C-q>", ":q<CR>")
-
 
 -- window splitting
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically

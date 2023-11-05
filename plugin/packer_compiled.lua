@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  alduin = {
+    loaded = true,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/alduin",
+    url = "https://github.com/alessandroyorba/alduin"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -134,14 +139,22 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
   },
   ["lspsaga.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0" },
+    load_after = {},
     loaded = true,
-    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    needs_bufread = false,
+    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/opt/lspsaga.nvim",
     url = "https://github.com/nvimdev/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
@@ -268,6 +281,12 @@ time([[Config for startup.nvim]], false)
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
 vim.cmd [[ packadd nvim-ts-autotag ]]
+vim.cmd [[ packadd nvim-lspconfig ]]
+vim.cmd [[ packadd lspsaga.nvim ]]
+
+-- Config for: lspsaga.nvim
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
+
 time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
