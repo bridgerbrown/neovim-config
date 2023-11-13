@@ -41,9 +41,6 @@ return packer.startup(function(use)
 	-- Kanagawa theme (for day)
   use("rebelot/kanagawa.nvim")
 
-  -- Alduin theme (for night)
-  use("alessandroyorba/alduin")
-
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
 

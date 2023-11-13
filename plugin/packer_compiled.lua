@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
-  alduin = {
-    loaded = true,
-    path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/alduin",
-    url = "https://github.com/alessandroyorba/alduin"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/bridgerbrown/.local/share/nvim/site/pack/packer/start/cmp-buffer",
