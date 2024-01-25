@@ -12,7 +12,7 @@ keymap.set("n", "<leader>-", "<C-x>")
 -- terminal
 keymap.set("n", "<leader>t", ":terminal<CR>")
 -- exiting terminal
-keymap.set("t", '<leader>q', '<C-\\><C-n>', { noremap = true})
+keymap.set("t", '<ESC>', '<C-\\><C-n>', { noremap = true})
 
 -- exit nvim
 keymap.set("n", "<C-q>", ":q<CR>")
