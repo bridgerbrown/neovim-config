@@ -126,6 +126,10 @@ return packer.startup(function(use)
   -- GLSL syntax
   use("tikhomirov/vim-glsl")
 
+  -- fzf
+  use{ "junegunn/fzf", run = function() vim.fn['fzf#install']() end }
+  use("junegunn/fzf.vim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

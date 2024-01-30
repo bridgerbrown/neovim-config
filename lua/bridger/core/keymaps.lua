@@ -54,3 +54,7 @@ keymap.set("n", "<leader>ha", ":lua require('harpoon.mark').add_file()<CR>", { d
       require("harpoon.ui").nav_file(pos)
     end, { desc = "Move to harpoon mark #" .. pos })
   end
+
+-- fzf
+vim.cmd("command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {}, v:true)")
+keymap.set("n", "<leader>,", ":Files<CR>")
